@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Array = <span id="array"></span>
+        <br>
+        <span id="ans1"></span>
+        <br>
+        <span id="ans2"></span>
+    </h1>
+    
+
+    <script>
+        let myColor = ["Red", "Green", "White", "Black"];
+        let find = myColor.indexOf('Green');
+        let find2 = myColor.indexOf('Orange');
+
+        if(find !== -1){
+            document.getElementById('ans1').innerHTML = '"Green" is found of array';
+        }
+        if(find2 === -1) {
+            document.getElementById('ans2').innerHTML = '"Orange" is not found of array';
+        }
+
+        document.getElementById('array').innerHTML = '[' + myColor + ']';
+    </script>
+</body>
+</html>

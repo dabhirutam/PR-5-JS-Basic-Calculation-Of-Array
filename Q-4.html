@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="ans"></h1>
+
+    <script>
+        let array = ['e', 'g', 'j', 'd', 'r'];
+        let arrays = array.join('').toString();
+        let ans = '';
+
+        for (let r = 0; r <= arrays.length - 1; r++) {
+            let index = r;
+            ans += 'ASCII value = ' + arrays.charCodeAt(index) + ' is array element to = ' + arrays.charAt(index) + '<br>';
+        }
+
+        document.getElementById('ans').innerHTML = ans;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        Maximum value of array is = <span id="max"></span>
+        <br>
+        Minimum value of array is = <span id="min"></span>
+    </h1>
+
+    <script>
+        let array = [34, 55, 66, 78, 56, 45]; 
+        let max = Math.max.apply(null, array);
+        let min = Math.min.apply(null, array);
+
+        document.getElementById('max').innerHTML = max;
+        document.getElementById('min').innerHTML = min;
+    </script>
+</body>
+
+</html>

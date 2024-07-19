@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        Array of numbers = <span id="array"></span>
+        <br>
+        Ascending of Array = <span id="ans1"></span>
+        <br>
+        Descending of Array = <span id="ans2"></span>
+    </h1>
+    <h1>
+        Array of colors = <span id="array2"></span>
+        <br>
+        Ascending of Array = <span id="ans3"></span>
+        <br>
+        Descending of Array = <span id="ans4"></span>
+    </h1>
+    
+
+    <script>
+        let numbers = [23,20,17, 12,5, 0, 1, 5, 12, 19, 20];
+        let myColor = ["Red", "Green", "White", "Black"];
+        
+        document.getElementById('array').innerHTML = '[' + numbers + ']';
+        document.getElementById('ans1').innerHTML =  '[' + numbers.toSorted((a, b) => a - b) + ']';
+        document.getElementById('ans2').innerHTML = '[' + numbers.toSorted((a, b) => a - b).reverse() + ']';
+
+        document.getElementById('array2').innerHTML = '[' + myColor + ']';
+        document.getElementById('ans3').innerHTML = '[' + myColor.toSorted() + ']';
+        document.getElementById('ans4').innerHTML = '[' + myColor.toSorted().reverse() + ']';
+        </script>
+</body>
+</html>

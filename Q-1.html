@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        Ans-1 = <span id="ans1"></span>
+        <br>
+        Ans-2 = <span id="ans2"></span>
+        <br>
+        Ans-3 = <span id="ans3"></span>
+        <br>
+        Ans-4 = <span id="ans4"></span>
+        <br>
+        Ans-5 = <span id="ans5"></span>
+        <br>
+        Ans-6 = <span id="ans6"></span>
+    </h1>
+    
+
+    <script>
+        let myColor = ["Red", "Green", "White", "Black"];
+
+        
+        document.getElementById('ans1').innerHTML = myColor;
+
+        document.getElementById('ans2').innerHTML = myColor.join('+');
+        
+        myColor.pop();
+        document.getElementById('ans3').innerHTML = myColor;
+        
+        document.getElementById('ans4').innerHTML = myColor[0];
+        
+        myColor.shift();
+        document.getElementById('ans5').innerHTML = myColor;
+        
+        myColor.unshift('Red');
+        myColor.push('Black','orange');
+        document.getElementById('ans6').innerHTML = myColor;
+    </script>
+</body>
+</html>
